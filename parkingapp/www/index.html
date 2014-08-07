@@ -26,21 +26,40 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <meta name="msapplication-tap-highlight" content="no" />
         <title>Hello Cheeks</title>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="app">
             <h1>Calculadora de Porcentaje</h1>
             <div id="deviceready">
-                <p class="event listening">Abriendo Aplicación</p>
-                <p class="event received">Calculadora de Porcentaje</p>
-                Número para sacar porcentaje:<input type='text' value='' id='valor'></input><br>
-                porcentaje:<input type='text' value='' id='porcentaje'></input><br>
-                Valor:<input type='text' value='' id='resultado' disabled></input><br>
-                <button id='btncalculate' onclick='porcentaje_promedio_superior()'>Calcular</button>
+                <div class='.form-group'>
+                  <label class='label.control-label'>
+                    Número para sacar porcentaje:
+                    <input type='text' value='' id='valor' class='form-control'></input><br>
+                  </label>
+                </div>
+                <div class='.form-group'>
+                  <label class='label.control-label'>
+                  porcentaje:
+                    <input type='text' value='' id='porcentaje' class='form-control'></input><br>
+                  </label>
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon">@</span>
+                  <input type="text" class="form-control" placeholder="Username">
+                </div>
+                <div class='.form-group'>
+                  <label class='label.control-label'>
+                  Valor:
+                    <input type='text' value='' id='resultado' class='form-control' disabled></input><br>
+                  </label>
+                </div>
+                <button id='btncalculate' class='btn btn-default' onclick='porcentaje_promedio_superior()'>Calcular</button>
+
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
